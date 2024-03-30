@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class LoggingAspect {
 
-  @Pointcut("execution(public * dev.pollito.springbootstartertemplate.controller..*.*(..))")
+  @Pointcut("execution(public * dev.pollito.microserviceb.controller..*.*(..))")
   public void controllerPublicMethodsPointcut() {}
 
   @Before("controllerPublicMethodsPointcut()")
