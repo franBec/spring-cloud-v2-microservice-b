@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>dev.pollito</groupId>
-    <artifactId>microserviceB</artifactId>
+    <artifactId>microservice-b</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>microserviceB</name>
-    <description>microserviceB</description>
+    <name>microservice-b</name>
+    <description>microservice-b</description>
     <properties>
         <java.version>21</java.version>
     </properties>
@@ -71,6 +71,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
+            <version>3.2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
             <version>3.2.4</version>
         </dependency>
     </dependencies>
