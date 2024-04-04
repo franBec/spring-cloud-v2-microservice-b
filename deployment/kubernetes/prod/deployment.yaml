@@ -20,13 +20,13 @@ spec:
         name: spring-cloud-v2-microservice-b
         resources:
           limits:
-            cpu: 500m
+            cpu: 400m
             ephemeral-storage: 1Gi
-            memory: 2Gi
+            memory: 1.5Gi
           requests:
-            cpu: 500m
+            cpu: 300m
             ephemeral-storage: 1Gi
-            memory: 2Gi
+            memory: 1Gi
         securityContext:
           capabilities:
             drop:
@@ -52,9 +52,9 @@ metadata:
   namespace: default
 spec:
   ports:
-    - port: 8765
+    - port: 8080
       protocol: TCP
-      targetPort: 8765
+      targetPort: 8080
   selector:
     app: microservice-b
   type: LoadBalancer
