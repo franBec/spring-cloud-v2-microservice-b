@@ -18,15 +18,7 @@ spec:
       containers:
       - image: pollitodev/spring-cloud-v2-microservice-b:0.1.0-SNAPSHOT
         name: spring-cloud-v2-microservice-b
-        resources:
-          limits:
-            cpu: 400m
-            ephemeral-storage: 1Gi
-            memory: 1.5Gi
-          requests:
-            cpu: 300m
-            ephemeral-storage: 1Gi
-            memory: 1Gi
+kube
         securityContext:
           capabilities:
             drop:
@@ -57,7 +49,7 @@ spec:
       targetPort: 8080
   selector:
     app: microservice-b
-  type: LoadBalancer
+  type: ClusterIP
 ---
 apiVersion: v1
 kind: ConfigMap
